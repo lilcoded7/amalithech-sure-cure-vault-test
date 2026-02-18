@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-ka&+e7fi(lp#e^g8(21gv+df1%(v)(*86l9s77%0m*i*sqe&uu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['amalithech-secure-vault.vercel.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -168,6 +168,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://172.20.10.3:3000",
+    "https://amalithech-secure-vault.vercel.app"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
