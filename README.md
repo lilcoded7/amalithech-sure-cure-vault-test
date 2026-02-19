@@ -1,6 +1,6 @@
 # Amalitech Sure Cure Vault Test
 
-A Django-based web application for managing secure vault functionality.
+A Next.js-based web application for managing secure vault functionality.
 This project includes a backend built with Django and is configured for deployment on **Vercel**.
 
 ---
@@ -11,7 +11,7 @@ This is a web application built with:
 
 * Python (Django framework)
 * SQLite database
-* Static frontend assets (CSS/JS)
+* Static frontend assets Next.js (CSS/JS) 
 * Deployment configuration for **Vercel**
 
 ---
