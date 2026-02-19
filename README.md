@@ -1,7 +1,3 @@
-Here is a clean and professional `README.md` file you can use for your project:
-
----
-
 # Amalitech Sure Cure Vault Test
 
 A Django-based web application for managing secure vault functionality.
