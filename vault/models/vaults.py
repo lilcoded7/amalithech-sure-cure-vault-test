@@ -34,6 +34,7 @@ class Node(models.Model):
         null=True, 
         blank=True
     )
+    content = models.TextField(null=True, blank=True)
     
     extension = models.CharField(max_length=10, editable=False, null=True, blank=True)
     size_bytes = models.BigIntegerField(default=0, editable=False) 

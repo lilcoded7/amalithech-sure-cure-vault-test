@@ -5,6 +5,7 @@ from vault.models.vaults import Node
 class NodeSerializer(serializers.ModelSerializer):
     owner = serializers.HiddenField(default=serializers.CurrentUserDefault())
     type = serializers.CharField(source="node_type")
+    content=serializers.CharField(required=False)
     ext = serializers.CharField(source="extension", read_only=True)
     size = serializers.SerializerMethodField()
     children = serializers.SerializerMethodField()
@@ -18,7 +19,7 @@ class NodeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Node
         fields = [
-            "id","owner", "name", "type", "ext", "size", 
+            "id","owner", "name", "type", "content", "ext", "size", 
             "children", "parent", "is_favorite", "is_trashed",
         ]
         read_only_fields = ["id", "ext", "size"]

@@ -107,17 +107,23 @@ REST_FRAMEWORK = {
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "railway",
+#         "USER": "postgres",
+#         "PASSWORD": "ZWlfbQItBqIcWjFlxTTPqpySEamrKDfN",
+#         "HOST": "caboose.proxy.rlwy.net",
+#         "PORT": "33385",
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "railway",
-        "USER": "postgres",
-        "PASSWORD": "ZWlfbQItBqIcWjFlxTTPqpySEamrKDfN",
-        "HOST": "caboose.proxy.rlwy.net",
-        "PORT": "33385",
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
